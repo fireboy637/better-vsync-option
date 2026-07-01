@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "com.fireboy637.bettervsyncoption.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "VideoSettingsScreenMixin",
+    "OptionsMixin",
+    "blaze3d.PresentModeMixin"
+  ]
+}

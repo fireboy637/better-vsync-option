@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "better-vsync-option",
+	"version": "${version}",
+	"name": "Better Vsync Option",
+	"description": "Choose your custom present mode instead of just \"vsync\"!",
+	"authors": [
+		"fireboy637"
+	],
+	"contact": {
+		"sources": "https://github.com/fireboy637/better-vsync-option"
+	},
+	"license": "MIT",
+	"icon": "assets/better-vsync-option/icon.png",
+	"environment": "client",
+	"mixins": ["better-vsync-option.mixins.json"],
+	"accesswidener": "better-vsync-options.classtweaker",
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=26.2"
+	}
+}
