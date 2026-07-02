@@ -11,8 +11,8 @@
     "requireAnnotations": true
   },
   "client": [
-    "VideoSettingsScreenMixin",
+    "MinecraftMixin",
     "OptionsMixin",
-    "blaze3d.PresentModeMixin"
+    "VideoSettingsScreenMixin"
   ]
 }

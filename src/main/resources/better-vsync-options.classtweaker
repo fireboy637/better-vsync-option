@@ -1,2 +1,4 @@
 classTweaker v2 official
 accessible class net/minecraft/client/Options$FieldAccess
+accessible field com/mojang/blaze3d/systems/GpuSurface$PresentMode PRESENT_MODES_VSYNC [Lcom/mojang/blaze3d/systems/GpuSurface$PresentMode;
+accessible field net/minecraft/client/Options enableVsync Lnet/minecraft/client/OptionInstance;

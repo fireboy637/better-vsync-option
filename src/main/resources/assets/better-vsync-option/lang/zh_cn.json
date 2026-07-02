@@ -1,3 +1,4 @@
 {
-  "options.presentModeOption": "呈现模式"
+  "options.present.presentModeOption": "呈现模式",
+  "options.presentMode.unsupported": "当前设备不支持该模式！"
 }

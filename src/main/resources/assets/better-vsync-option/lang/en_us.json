@@ -1,3 +1,4 @@
 {
-  "options.presentModeOption": "Present Mode"
+  "options.present.presentModeOption": "Present Mode",
+  "options.presentMode.unsupported": "This mode is NOT supported on current device!"
 }
