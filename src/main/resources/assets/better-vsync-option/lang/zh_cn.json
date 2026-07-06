@@ -1,4 +1,8 @@
 {
-  "options.present.presentModeOption": "呈现模式",
-  "options.presentMode.unsupported": "当前设备不支持该模式！"
+  "options.presentMode.presentModeOption": "呈现模式",
+  "options.presentMode.unsupported": "当前设备不支持该模式！",
+  "options.presentMode.FIFO": "标准垂直同步，按照匹配显示刷新率的固定延迟呈现帧。\n§2无画面撕裂。§r\n§4高输入延迟，尤其是帧率低于刷新率时。",
+  "options.presentMode.FIFO_RELAXED": "“改进”垂直同步，当某一帧超时时，立即尝试呈现下一帧，而不是等待下个刷新循环。\n§6可能出现轻微的画面撕裂，尤其是帧率低于刷新率时。§r\n§2中等输入延迟，整体优于FIFO。§r",
+  "options.presentMode.MAILBOX": "另一个非垂直同步模式，始终呈现最新的完全渲染帧，丢弃队列中的旧帧。\n§2无画面撕裂。§r\n§a低输入延迟，接近IMMEDIATE。§r",
+  "options.presentMode.IMMEDIATE": "传统的非垂直同步模式。在渲染完成后立即显示最新帧，即使上一帧仍在显示。\n§4必定导致画面撕裂。§r\n§2最低输入延迟。§r"
 }

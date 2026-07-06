@@ -23,7 +23,7 @@ public class BetterVsyncOption {
 			Enum::ordinal
 	);
 	public static final OptionInstance<GpuSurface.PresentMode> presentModeOption = new OptionInstance<>(
-			"options.present.presentModeOption",
+			"options.presentMode.presentModeOption",
 			mode -> {
 				var minecraft = Minecraft.getInstance();
 				var base = Component.translatable("options.presentMode." + mode.name());
@@ -37,7 +37,7 @@ public class BetterVsyncOption {
 			GpuSurface.PresentMode.FIFO,
 			mode -> {
 				var minecraft = Minecraft.getInstance();
-				minecraft.options.enableVsync.set(List.of(GpuSurface.PresentMode.PRESENT_MODES_VSYNC).contains(mode));
+				minecraft.options.enableVsync().set(List.of(GpuSurface.PresentMode.PRESENT_MODES_VSYNC).contains(mode));
 				minecraft.invalidateSurfaceConfiguration();
 			}
 	);

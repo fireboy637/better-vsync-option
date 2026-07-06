@@ -1,4 +1,8 @@
 {
-  "options.present.presentModeOption": "Present Mode",
-  "options.presentMode.unsupported": "This mode is NOT supported on current device!"
+  "options.presentMode.presentModeOption": "Present Mode",
+  "options.presentMode.unsupported": "This mode is NOT supported on current device!",
+  "options.presentMode.FIFO": "Standard vsync. Presents frames at a fixed interval matching the display refresh rate.\n§2No screen tearing.§r\n§4High input latency, especially when FPS drops below refresh rate.§r",
+  "options.presentMode.FIFO_RELAXED": "\"Improved\" vsync. Presents next frame immediately when a frame takes too long, instead of waiting for the next refresh cycle.\n§6Slight screen tearing possible when FPS is below refresh rate.§r\n§2Mid input latency, generally better than `FIFO`.§r",
+  "options.presentMode.MAILBOX": "Another non-vsync mode. Always presents the latest fully rendered frame, discarding older queued frames.\n§2No screen tearing.§r\n§aLow input latency, close to IMMEDIATE.§r",
+  "options.presentMode.IMMEDIATE": "Traditional non-vsync mode. Presents the latest frame as soon as it is rendered, even if the previous frame is still being displayed.\n§4Always causes screen tearing.§r\n§2Lowest input latency, as its name implies.§r"
 }

@@ -14,7 +14,7 @@
 	"icon": "assets/better-vsync-option/icon.png",
 	"environment": "client",
 	"mixins": ["better-vsync-option.mixins.json"],
-	"accesswidener": "better-vsync-options.classtweaker",
+	"accessWidener": "better-vsync-options.classtweaker",
 	"depends": {
 		"fabricloader": ">=0.19.3",
 		"minecraft": ">=26.2"
