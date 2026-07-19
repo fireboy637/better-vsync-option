@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Options.class)
-public class OptionsMixin {
+public abstract class OptionsMixin {
     @Inject(
             method = "processOptions",
             at = @At("HEAD")

@@ -1,6 +1,6 @@
 package com.fireboy637.bettervsyncoption;
 
-import com.mojang.blaze3d.systems.GpuSurface;
+import com.mojang.renderpearl.api.device.GpuSurface;
 import com.mojang.serialization.Codec;
 
 import net.minecraft.client.Minecraft;

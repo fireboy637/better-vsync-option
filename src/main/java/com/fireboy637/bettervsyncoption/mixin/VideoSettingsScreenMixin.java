@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(VideoSettingsScreen.class)
-public class VideoSettingsScreenMixin {
+public abstract class VideoSettingsScreenMixin {
     @SuppressWarnings("rawtypes")
     @Redirect(
             method = "displayOptions",
