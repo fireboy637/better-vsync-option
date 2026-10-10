@@ -6,8 +6,8 @@ It **only seems useful on Vulkan** because OpenGL only has `FIFO` and `IMMEDIATE
 
 All Mojang currently supported present modes:
 
-| Present Mode   | Description                                                                                                                   | Screen Tearing                                             | Input latency                                        |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------|
+| Present Mode   | Description                                                                                                                   | Screen Tearing                                              | Input latency                                        |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | `FIFO`         | Standard vsync. Presents frames at a fixed interval matching the display refresh rate.                                        | ❎ (No tearing)                                             | High - especially when FPS drops below refresh rate. |
 | `FIFO_RELAXED` | "Improved" vsync. Presents next frame immediately when a frame takes too long, instead of waiting for the next refresh cycle. | ⚠️（Slight tearing possible when FPS is below refresh rate) | Mid - generally better than `FIFO`.                  |
 | `MAILBOX`      | Always presents the latest fully rendered frame, discarding older queued frames.                                              | ❎ (No tearing)                                             | Low - close to `IMMEDIATE`.                          |

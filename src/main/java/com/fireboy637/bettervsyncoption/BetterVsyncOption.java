@@ -1,5 +1,6 @@
 package com.fireboy637.bettervsyncoption;
 
+import com.fireboy637.bettervsyncoption.mixin.accessor.PresentModeAccessor;
 import com.mojang.renderpearl.api.device.GpuSurface;
 import com.mojang.serialization.Codec;
 
@@ -11,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.util.ByIdMap;
 
+import java.math.BigInteger;
 import java.util.List;
 
 public class BetterVsyncOption {
@@ -37,8 +39,9 @@ public class BetterVsyncOption {
 			GpuSurface.PresentMode.FIFO,
 			mode -> {
 				var minecraft = Minecraft.getInstance();
-				minecraft.options.enableVsync().set(List.of(GpuSurface.PresentMode.PRESENT_MODES_VSYNC).contains(mode));
+				minecraft.options.enableVsync().set(List.of(PresentModeAccessor.getPresentModesVsync()).contains(mode));
 				minecraft.invalidateSurfaceConfiguration();
+				var a = BigInteger.TWO;
 			}
 	);
 }
