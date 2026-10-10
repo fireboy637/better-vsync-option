@@ -12,7 +12,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.util.ByIdMap;
 
-import java.math.BigInteger;
 import java.util.List;
 
 public class BetterVsyncOption {
@@ -41,7 +40,6 @@ public class BetterVsyncOption {
 				var minecraft = Minecraft.getInstance();
 				minecraft.options.enableVsync().set(List.of(PresentModeAccessor.getPresentModesVsync()).contains(mode));
 				minecraft.invalidateSurfaceConfiguration();
-				var a = BigInteger.TWO;
-			}
+            }
 	);
 }
